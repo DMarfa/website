@@ -66,7 +66,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #0059FF;
+    color: #FF6B35;
 }
 
 .nav-link::after {
@@ -76,7 +76,7 @@ body {
     left: 0;
     width: 0;
     height: 1px;
-    background: #0059FF;
+    background: linear-gradient(45deg, #FF6B35, #DC143C);
     transition: width 0.3s ease;
 }
 
@@ -105,10 +105,6 @@ body {
     letter-spacing: -0.02em;
 }
 
-.highlight {
-    color: #0059FF;
-    font-weight: 600;
-}
 
 .hero-description {
     font-size: 1.25rem;
@@ -147,7 +143,10 @@ section {
 .section-number {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.875rem;
-    color: #0059FF;
+    background: linear-gradient(45deg, #FF6B35, #DC143C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 500;
     letter-spacing: 0.1em;
 }
@@ -230,7 +229,10 @@ section {
 .focus-number {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.875rem;
-    color: #0059FF;
+    background: linear-gradient(45deg, #FF6B35, #DC143C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 500;
 }
 
@@ -247,7 +249,7 @@ section {
 
 /* Approach Section */
 .approach {
-    background: #0059FF;
+    background: linear-gradient(45deg, #FF6B35, #DC143C);
     color: white;
 }
 
@@ -415,5 +417,82 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #a1a1a1;
+    background: linear-gradient(45deg, #DC143C, #FF6B35);
+}
+
+/* Typing Animation */
+.typing-container {
+    display: inline-block;
+}
+
+.typing-text {
+    overflow: hidden;
+    border-right: 3px solid transparent;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(40, end), blink-cursor 0.75s step-end infinite;
+}
+
+.typing-cursor {
+    opacity: 1;
+    animation: blink-cursor 0.75s step-end infinite;
+    color: #FF6B35;
+    font-weight: 300;
+}
+
+.typing-highlight {
+    opacity: 0;
+    animation: fadeInAfterTyping 0.5s ease-in-out 2.5s forwards;
+}
+
+@keyframes typing {
+    from { 
+        width: 0;
+    }
+    to { 
+        width: 100%;
+    }
+}
+
+@keyframes blink-cursor {
+    from, to { 
+        opacity: 1;
+    }
+    50% { 
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInAfterTyping {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced gradient animations */
+.highlight {
+    background: linear-gradient(45deg, #FF6B35, #DC143C, #FF6B35);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
