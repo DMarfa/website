@@ -3,53 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marfa Labs - Product Innovation for Health & Lifestyle</title>
-    <link rel="stylesheet" href="styles.css?v=2">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Marfa Labs</title>
+    <link rel="stylesheet" href="styles.css?v=3">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
                 <div class="logo">
-                    <img src="logo.png?v=2" alt="Marfa Labs" class="logo-img">
-                    <h1>Marfa Labs</h1>
+                    <span class="logo-text">MARFA LABS</span>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#focus">Focus Areas</a></li>
-                    <li><a href="#approach">Approach</a></li>
-                </ul>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#focus" class="nav-link">Focus</a>
+                    <a href="#approach" class="nav-link">Approach</a>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Apps that improve lives</h1>
-                <p>We're a bootstrapped product studio bringing innovation and excellence to consumer applications in health, fitness, and lifestyle categories.</p>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Apps that
+                            <span class="highlight">improve lives</span>
+                        </h1>
+                        <p class="hero-description">
+                            We're a bootstrapped product studio bringing innovation and excellence to consumer applications in health, fitness, and lifestyle categories.
+                        </p>
+                        <div class="hero-meta">
+                            <span class="meta-item">EST. 2025</span>
+                            <span class="meta-divider">—</span>
+                            <span class="meta-item">PRODUCT STUDIO</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="container">
-                <h2>Our Mission</h2>
-                <p>At Marfa Labs, we're passionate about creating competitive applications that benefit humanity. We work in proven niches like health & fitness, bringing our product innovation and development excellence to deliver apps that make a real difference in people's lives.</p>
-                
-                <div class="values">
-                    <div class="value-item">
-                        <h3>Innovation</h3>
-                        <p>Pushing boundaries with cutting-edge solutions that solve real problems.</p>
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">Mission</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="large-text">
+                            At Marfa Labs, we're passionate about creating competitive applications that benefit humanity.
+                        </p>
+                        <p>
+                            We work in proven niches like health & fitness, bringing our product innovation and development excellence to deliver apps that make a real difference in people's lives.
+                        </p>
                     </div>
-                    <div class="value-item">
-                        <h3>Excellence</h3>
-                        <p>Delivering high-quality products with meticulous attention to detail.</p>
-                    </div>
-                    <div class="value-item">
-                        <h3>Impact</h3>
-                        <p>Creating applications that genuinely improve users' health and lifestyle.</p>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <h3>Innovation</h3>
+                            <p>Pushing boundaries with cutting-edge solutions that solve real problems.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>Excellence</h3>
+                            <p>Delivering high-quality products with meticulous attention to detail.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>Impact</h3>
+                            <p>Creating applications that genuinely improve users' health and lifestyle.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,21 +80,30 @@
 
         <section id="focus" class="focus-areas">
             <div class="container">
-                <h2>Focus Areas</h2>
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Focus Areas</h2>
+                </div>
                 <div class="focus-grid">
                     <div class="focus-item">
-                        <div class="focus-icon">💪</div>
-                        <h3>Health & Fitness</h3>
+                        <div class="focus-header">
+                            <span class="focus-number">01</span>
+                            <h3>Health & Fitness</h3>
+                        </div>
                         <p>Developing comprehensive fitness tracking, workout planning, and health monitoring applications that motivate users to achieve their wellness goals.</p>
                     </div>
                     <div class="focus-item">
-                        <div class="focus-icon">🌱</div>
-                        <h3>Lifestyle & Wellness</h3>
+                        <div class="focus-header">
+                            <span class="focus-number">02</span>
+                            <h3>Lifestyle & Wellness</h3>
+                        </div>
                         <p>Creating apps for meditation, nutrition tracking, sleep optimization, and daily habit formation to support holistic well-being.</p>
                     </div>
                     <div class="focus-item">
-                        <div class="focus-icon">🎯</div>
-                        <h3>Productivity & Goals</h3>
+                        <div class="focus-header">
+                            <span class="focus-number">03</span>
+                            <h3>Productivity & Goals</h3>
+                        </div>
                         <p>Building tools that help users organize their lives, set meaningful goals, and track progress across various life domains.</p>
                     </div>
                 </div>
@@ -80,15 +112,20 @@
 
         <section id="approach" class="approach">
             <div class="container">
-                <h2>Our Approach</h2>
-                <div class="approach-content">
-                    <div class="approach-text">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Approach</h2>
+                </div>
+                <div class="approach-grid">
+                    <div class="approach-item">
                         <h3>Bootstrapped Excellence</h3>
                         <p>We believe in building sustainable, profitable products from day one. Our bootstrapped approach allows us to focus on creating genuine value for users without external pressure.</p>
-                        
+                    </div>
+                    <div class="approach-item">
                         <h3>User-Centric Design</h3>
                         <p>Every decision we make is guided by user needs and feedback. We create intuitive, beautiful interfaces that make healthy living accessible and enjoyable.</p>
-                        
+                    </div>
+                    <div class="approach-item">
                         <h3>Proven Markets</h3>
                         <p>We focus on established niches with clear demand, then differentiate through superior execution, innovative features, and exceptional user experience.</p>
                     </div>
@@ -98,9 +135,18 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Marfa Labs. Building apps that benefit humanity.</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <span class="footer-year">2025</span>
+                    <span class="footer-divider">—</span>
+                    <span class="footer-company">MARFA LABS</span>
+                </div>
+                <div class="footer-tagline">
+                    Building apps that benefit humanity
+                </div>
+            </div>
         </div>
     </footer>
 </body>
